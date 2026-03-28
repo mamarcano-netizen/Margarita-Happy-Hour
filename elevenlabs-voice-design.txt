@@ -1,0 +1,100 @@
+================================================================
+HAPPY HOUR WITH MARGARITA
+ElevenLabs — Custom Voice Design Prompt
+================================================================
+
+USE THIS IN ELEVENLABS "VOICE DESIGN" OR "VOICE LAB" FEATURE:
+
+----------------------------------------------------------------
+
+VOICE DESIGN PROMPT:
+(Copy and paste this into ElevenLabs Voice Design text box)
+
+A warm, confident, glamorous American woman in her early 30s
+from New York City. Her voice is smooth and polished with a
+natural NYC energy — not aggressive, but commanding attention.
+She speaks like your most stylish best friend who actually
+knows what she's talking about. Warm and approachable but
+never basic. Her tone is enthusiastic and genuine, with a
+slight husky richness that feels luxurious and on-brand for
+a beauty creator. She pauses naturally between steps like a
+real professional. Her pace is medium — not rushed, never
+boring. She sounds like she belongs on a beauty brand
+campaign but also like someone you trust completely.
+
+----------------------------------------------------------------
+
+VOICE SETTINGS (adjust these sliders in ElevenLabs):
+
+Stability:          65  (allows natural variation, not robotic)
+Clarity/Similarity: 80  (keeps voice consistent and clear)
+Style Exaggeration: 45  (adds personality without overdoing it)
+Speaker Boost:      ON  (enhances presence and richness)
+
+----------------------------------------------------------------
+
+RECOMMENDED BUILT-IN VOICES TO START WITH:
+(If Voice Design is not available on your plan)
+
+1. Bella      — warm, feminine, smooth         ★ TOP PICK
+2. Charlotte  — glamorous, polished, confident
+3. Rachel     — clear, trustworthy, professional
+4. Serena     — rich, warm, authoritative
+5. Elli       — young, energetic, approachable
+
+----------------------------------------------------------------
+
+MODEL TO USE:
+Eleven Multilingual v2  — best quality and most natural
+(or Eleven Turbo v2 if you want faster generation)
+
+----------------------------------------------------------------
+
+SPEECH SETTINGS FOR TUTORIAL CONTENT:
+
+- Speaking Rate:  Slightly slower than default (-10%)
+  Reason: Viewers need time to follow along with steps
+
+- Pitch: Default (do not adjust)
+
+- Add [pause] tags where written in the script
+  ElevenLabs reads [pause] as a natural breath/pause
+
+----------------------------------------------------------------
+
+HOW TO CLONE MARGARITA'S REAL VOICE (ElevenLabs Pro feature):
+
+If you want the AI to sound exactly like Margarita:
+
+Step 1 — Record Margarita speaking clearly for 1-3 minutes
+         (read a magazine article, anything natural)
+         Use iPhone voice memos — quiet room, no background noise
+
+Step 2 — Save the recording as MP3 or M4A
+
+Step 3 — In ElevenLabs go to:
+         Voices → Add Voice → Instant Voice Clone
+
+Step 4 — Upload the recording
+
+Step 5 — Name it "Margarita — Happy Hour"
+
+Step 6 — Now paste the script and it will speak
+         in HER actual voice
+
+This means the AI voiceover sounds exactly like Margarita
+even when she is not available to record.
+
+================================================================
+BRAND VOICE GUIDELINES
+(Keep these consistent across ALL content)
+================================================================
+
+TONE:          Warm, confident, glamorous, real
+NEVER sound:   Robotic, rushed, overly formal, salesy
+ALWAYS sound:  Like a best friend who is also an expert
+SIGNATURE:     End every video with "Your happy hour starts now"
+PACE:          Medium — let the beauty steps breathe
+ENERGY:        High on intros and outros, calm during tutorials
+
+================================================================

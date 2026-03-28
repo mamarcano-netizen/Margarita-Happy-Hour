@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Happy Hour with Margarita — Makeup tutorials, beauty tips, product reviews & glam content by Margarita Marcano."/>
+  <title>Happy Hour with Margarita</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo"><img src="logo.svg" alt="Happy Hour with Margarita" height="52"/></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#collab">Work With Me</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <img src="logo.svg" alt="Happy Hour with Margarita" class="hero-logo"/>
+      </div>
+      <p class="hero-tagline">Beauty is the occasion. Every hour is happy.</p>
+      <p class="hero-sub">Makeup tutorials · Product reviews · Glam looks · NYC vibes</p>
+      <div class="hero-btns">
+        <a href="#content" class="btn btn-primary">Watch My Content</a>
+        <a href="#collab" class="btn btn-outline">Work With Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="#" class="social-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+          TikTok
+        </a>
+        <a href="#" class="social-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="#" class="social-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll"><span>scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- ===== INSTAGRAM FEED ===== -->
+  <section class="instagram-section" id="instagram">
+    <div class="container">
+      <div class="ig-header">
+        <div>
+          <span class="section-label">Follow Along</span>
+          <h2 class="section-title" style="margin-bottom:0">Latest on <em>Instagram</em></h2>
+        </div>
+        <a href="#" class="btn btn-outline-dark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @happyhourwithmargarita
+        </a>
+      </div>
+      <div class="ig-grid">
+        <a href="#" class="ig-post" style="--bg:linear-gradient(135deg,#C4526E,#8B2042)"><span>✦</span></a>
+        <a href="#" class="ig-post" style="--bg:linear-gradient(135deg,#D4AF37,#8B6914)"><span>✦</span></a>
+        <a href="#" class="ig-post" style="--bg:linear-gradient(135deg,#9B5FA5,#6B2F7A)"><span>✦</span></a>
+        <a href="#" class="ig-post" style="--bg:linear-gradient(135deg,#E07090,#C4526E)"><span>✦</span></a>
+        <a href="#" class="ig-post" style="--bg:linear-gradient(135deg,#8B2042,#3D1A28)"><span>✦</span></a>
+        <a href="#" class="ig-post" style="--bg:linear-gradient(135deg,#D4AF37,#C4526E)"><span>✦</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image-placeholder">
+            <div class="img-placeholder-inner">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="#C4526E" opacity="0.3"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+              <p>Your Photo Here</p>
+            </div>
+          </div>
+          <div class="about-badge">✦ NYC Creator</div>
+        </div>
+        <div class="about-text">
+          <span class="section-label">Meet Margarita</span>
+          <h2 class="section-title">Beauty is more than <em>skin deep</em></h2>
+          <p>Hey gorgeous! I'm <strong>Margarita Marcano</strong> — a NYC-based makeup artist, beauty enthusiast, and content creator passionate about helping you find your most confident, glam self.</p>
+          <p>From everyday natural looks to full glam transformations, I believe beauty should be <em>fun, inclusive, and most importantly — yours.</em></p>
+          <p>Whether you're a beginner or a beauty pro, you'll find something here to inspire your next look.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Tutorials</span></div>
+            <div class="stat"><span class="stat-num">10K+</span><span class="stat-label">Community</span></div>
+            <div class="stat"><span class="stat-num">5★</span><span class="stat-label">Brand Collabs</span></div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEFORE & AFTER ===== -->
+  <section class="ba-section section" id="before-after">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Transformations</span>
+        <h2 class="section-title">Before &amp; <em>After</em></h2>
+        <p class="section-desc">Drag the slider to reveal the transformation. Every face tells a story.</p>
+      </div>
+      <div class="ba-grid">
+        <div class="ba-slider" id="baSlider1">
+          <div class="ba-before" style="background:linear-gradient(135deg,#F5E6EA,#E8C5D5)">
+            <div class="ba-label">Before</div>
+            <div class="ba-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="#C4526E" opacity="0.2"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg><span>Natural Look</span></div>
+          </div>
+          <div class="ba-after" style="background:linear-gradient(135deg,#C4526E,#8B2042)">
+            <div class="ba-label after">After</div>
+            <div class="ba-placeholder light"><svg width="48" height="48" viewBox="0 0 24 24" fill="white" opacity="0.4"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg><span>Full Glam</span></div>
+          </div>
+          <div class="ba-handle" data-slider="baSlider1">
+            <div class="ba-line"></div>
+            <div class="ba-circle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M8 5l-7 7 7 7M16 5l7 7-7 7" stroke="white" stroke-width="2" fill="none"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="ba-slider" id="baSlider2">
+          <div class="ba-before" style="background:linear-gradient(135deg,#EDE8F5,#D5C5E8)">
+            <div class="ba-label">Before</div>
+            <div class="ba-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="#9B5FA5" opacity="0.2"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg><span>Everyday Look</span></div>
+          </div>
+          <div class="ba-after" style="background:linear-gradient(135deg,#9B5FA5,#6B2F7A)">
+            <div class="ba-label after">After</div>
+            <div class="ba-placeholder light"><svg width="48" height="48" viewBox="0 0 24 24" fill="white" opacity="0.4"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg><span>Evening Glam</span></div>
+          </div>
+          <div class="ba-handle" data-slider="baSlider2">
+            <div class="ba-line"></div>
+            <div class="ba-circle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M8 5l-7 7 7 7M16 5l7 7-7 7" stroke="white" stroke-width="2" fill="none"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTENT / VIDEOS ===== -->
+  <section class="content-section section" id="content">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Latest Content</span>
+        <h2 class="section-title">Fresh from the <em>glam room</em></h2>
+        <p class="section-desc">Tutorials, reviews, and GRWM moments — new content dropping every week.</p>
+      </div>
+      <div class="content-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tutorial">Tutorials</button>
+        <button class="filter-btn" data-filter="grwm">GRWM</button>
+        <button class="filter-btn" data-filter="review">Reviews</button>
+        <button class="filter-btn" data-filter="tips">Tips</button>
+      </div>
+      <div class="content-grid">
+        <article class="content-card" data-category="tutorial">
+          <div class="card-thumb" style="--c1:#C4526E;--c2:#8B2042;">
+            <div class="card-play"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="card-tag">Tutorial</span>
+          </div>
+          <div class="card-body">
+            <h3>Soft Glam Evening Look</h3>
+            <p>The perfect date-night makeup in under 20 minutes.</p>
+            <a href="#" class="card-link">Watch Now →</a>
+          </div>
+        </article>
+        <article class="content-card" data-category="grwm">
+          <div class="card-thumb" style="--c1:#D4AF37;--c2:#8B6914;">
+            <div class="card-play"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="card-tag">GRWM</span>
+          </div>
+          <div class="card-body">
+            <h3>GRWM: NYC Brunch Ready</h3>
+            <p>Sunday brunch calls for effortless glam.</p>
+            <a href="#" class="card-link">Watch Now →</a>
+          </div>
+        </article>
+        <article class="content-card" data-category="review">
+          <div class="card-thumb" style="--c1:#9B5FA5;--c2:#6B2F7A;">
+            <div class="card-play"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="card-tag">Review</span>
+          </div>
+          <div class="card-body">
+            <h3>Drugstore Dupes That SLAP</h3>
+            <p>High-end results on a budget — tested 8 products.</p>
+            <a href="#" class="card-link">Watch Now →</a>
+          </div>
+        </article>
+        <article class="content-card" data-category="tutorial">
+          <div class="card-thumb" style="--c1:#E07090;--c2:#C4526E;">
+            <div class="card-play"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="card-tag">Tutorial</span>
+          </div>
+          <div class="card-body">
+            <h3>No-Foundation Skin Routine</h3>
+            <p>Glass skin without heavy foundation.</p>
+            <a href="#" class="card-link">Watch Now →</a>
+          </div>
+        </article>
+        <article class="content-card" data-category="tips">
+          <div class="card-thumb" style="--c1:#D4AF37;--c2:#C4526E;">
+            <div class="card-play"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="card-tag">Tips</span>
+          </div>
+          <div class="card-body">
+            <h3>5 Tricks Every Beginner Needs</h3>
+            <p>Game-changing techniques I learned over the years.</p>
+            <a href="#" class="card-link">Watch Now →</a>
+          </div>
+        </article>
+        <article class="content-card" data-category="grwm">
+          <div class="card-thumb" style="--c1:#8B2042;--c2:#5C1030;">
+            <div class="card-play"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="card-tag">GRWM</span>
+          </div>
+          <div class="card-body">
+            <h3>Holiday Party Glam</h3>
+            <p>Bold lips, dramatic lashes, full glam energy.</p>
+            <a href="#" class="card-link">Watch Now →</a>
+          </div>
+        </article>
+      </div>
+      <div class="section-cta"><a href="#" class="btn btn-outline-dark">See All Content</a></div>
+    </div>
+  </section>
+
+  <!-- ===== GET THE LOOK ===== -->
+  <section class="gtl-section section" id="get-the-look">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Shop The Look</span>
+        <h2 class="section-title">Get <em>The Look</em></h2>
+        <p class="section-desc">Every product from every look — linked and ready for you.</p>
+      </div>
+      <div class="gtl-grid">
+        <div class="gtl-card">
+          <div class="gtl-thumb" style="background:linear-gradient(135deg,#C4526E,#8B2042)">
+            <span class="gtl-name">Soft Glam Evening</span>
+          </div>
+          <div class="gtl-products">
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#F5E0C8"></span>
+              <span>Charlotte Tilbury Flawless Filter</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#C4526E"></span>
+              <span>MAC Ruby Woo Lipstick</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#8B6914"></span>
+              <span>Urban Decay Naked Palette</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#1A0812"></span>
+              <span>L'Oréal Voluminous Mascara</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+          </div>
+        </div>
+        <div class="gtl-card">
+          <div class="gtl-thumb" style="background:linear-gradient(135deg,#D4AF37,#8B6914)">
+            <span class="gtl-name">NYC Brunch Glow</span>
+          </div>
+          <div class="gtl-products">
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#F9D5E5"></span>
+              <span>NARS Blush in Orgasm</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#D4AF37"></span>
+              <span>Fenty Beauty Highlighter</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#C4A882"></span>
+              <span>Tarte Shape Tape Concealer</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#E07090"></span>
+              <span>Rare Beauty Soft Pinch Blush</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+          </div>
+        </div>
+        <div class="gtl-card">
+          <div class="gtl-thumb" style="background:linear-gradient(135deg,#9B5FA5,#6B2F7A)">
+            <span class="gtl-name">Holiday Party Glam</span>
+          </div>
+          <div class="gtl-products">
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#6B2F7A"></span>
+              <span>Too Faced Born This Way Foundation</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#8B2042"></span>
+              <span>Huda Beauty Lashes</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#9B5FA5"></span>
+              <span>Anastasia Beverly Hills Brow Wiz</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+            <div class="gtl-product">
+              <span class="gtl-dot" style="background:#D4AF37"></span>
+              <span>Pat McGrath Skin Fetish Gloss</span>
+              <a href="#" class="gtl-buy">Shop →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEHIND THE SCENES ===== -->
+  <section class="bts-section section" id="bts">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Behind The Scenes</span>
+        <h2 class="section-title">The real <em>Happy Hour</em></h2>
+        <p class="section-desc">Candid moments, studio days, and the chaos behind the glam.</p>
+      </div>
+      <div class="bts-grid">
+        <div class="bts-item bts-large" style="background:linear-gradient(135deg,#1A0812,#3D1A28)">
+          <div class="bts-overlay"><span>Studio Day ✦</span></div>
+        </div>
+        <div class="bts-item" style="background:linear-gradient(135deg,#C4526E,#8B2042)">
+          <div class="bts-overlay"><span>Behind the Camera</span></div>
+        </div>
+        <div class="bts-item" style="background:linear-gradient(135deg,#D4AF37,#8B6914)">
+          <div class="bts-overlay"><span>Product Haul</span></div>
+        </div>
+        <div class="bts-item" style="background:linear-gradient(135deg,#9B5FA5,#6B2F7A)">
+          <div class="bts-overlay"><span>Getting Ready</span></div>
+        </div>
+        <div class="bts-item bts-wide" style="background:linear-gradient(135deg,#8B2042,#C4526E)">
+          <div class="bts-overlay"><span>NYC Vibes ✦</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG / TIPS ===== -->
+  <section class="blog-section section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Beauty Tips</span>
+        <h2 class="section-title">From the <em>Beauty Desk</em></h2>
+        <p class="section-desc">Guides, how-tos, and everything you need to level up your makeup game.</p>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card blog-featured">
+          <div class="blog-thumb" style="background:linear-gradient(135deg,#C4526E,#8B2042)">
+            <span class="blog-cat">Skincare</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">March 20, 2026</span>
+            <h3>The 10-Minute Morning Routine That Changed My Skin</h3>
+            <p>Forget 12-step routines. Here's what actually works — fast, effective, and budget-friendly for any skin type.</p>
+            <a href="#" class="card-link">Read Article →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-thumb sm" style="background:linear-gradient(135deg,#D4AF37,#8B6914)">
+            <span class="blog-cat">Tutorials</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">March 15, 2026</span>
+            <h3>How to Make Your Lipstick Last All Day</h3>
+            <p>The layering trick that professional MUAs swear by.</p>
+            <a href="#" class="card-link">Read Article →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-thumb sm" style="background:linear-gradient(135deg,#9B5FA5,#6B2F7A)">
+            <span class="blog-cat">Reviews</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">March 10, 2026</span>
+            <h3>5 Foundations Under $20 That Actually Cover</h3>
+            <p>Drugstore doesn't mean cheap — these are game changers.</p>
+            <a href="#" class="card-link">Read Article →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-thumb sm" style="background:linear-gradient(135deg,#E07090,#8B2042)">
+            <span class="blog-cat">Glam Tips</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">March 5, 2026</span>
+            <h3>Contouring 101: A Beginner's Complete Guide</h3>
+            <p>No more muddy streaks — here's the foolproof method.</p>
+            <a href="#" class="card-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="section-cta"><a href="#" class="btn btn-outline-dark">Read All Articles</a></div>
+    </div>
+  </section>
+
+  <!-- ===== DIGITAL PRODUCTS ===== -->
+  <section class="products-section section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Digital Products</span>
+        <h2 class="section-title">Glam on your <em>own terms</em></h2>
+        <p class="section-desc">Download my guides and take your beauty game to the next level — instantly.</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card featured-product">
+          <div class="product-badge">Best Seller</div>
+          <div class="product-icon" style="background:linear-gradient(135deg,#C4526E,#8B2042)">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="white"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zm-3-7H9v-2h6v2zm2 4H9v-2h8v2z"/></svg>
+          </div>
+          <h3>The Complete Glam Guide</h3>
+          <p>50-page digital guide covering foundation matching, contouring, eye looks, and building your kit from scratch.</p>
+          <div class="product-price">$24.99</div>
+          <a href="#" class="btn btn-primary btn-full">Get the Guide</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon" style="background:linear-gradient(135deg,#D4AF37,#8B6914)">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="white"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l5 2.18V11c0 3.5-2.33 6.79-5 7.93-2.67-1.14-5-4.43-5-7.93V7.18L12 5z"/></svg>
+          </div>
+          <h3>Skincare Prep Bible</h3>
+          <p>The exact skincare steps that make your makeup sit flawlessly — morning and night routines included.</p>
+          <div class="product-price">$14.99</div>
+          <a href="#" class="btn btn-outline-dark btn-full">Get the Guide</a>
+        </div>
+        <div class="product-card">
+          <div class="product-icon" style="background:linear-gradient(135deg,#9B5FA5,#6B2F7A)">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="white"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+          </div>
+          <h3>30-Day Glow Up Challenge</h3>
+          <p>Daily beauty tasks, affirmations, and techniques that transform your routine — and your confidence.</p>
+          <div class="product-price">$9.99</div>
+          <a href="#" class="btn btn-outline-dark btn-full">Get the Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials-section section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What They Say</span>
+        <h2 class="section-title">The community <em>speaks</em></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Margarita's tutorials literally changed my life. I never knew how to do a smokey eye and now I get compliments every time I go out!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#C4526E,#8B2042)">J</div>
+            <div><strong>Jessica R.</strong><span>Follower since 2024</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card featured-testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"We partnered with Margarita for our fall campaign and the results were incredible. Her audience is engaged, authentic, and trusts her recommendations completely."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#D4AF37,#8B6914)">L</div>
+            <div><strong>Luxe Beauty Brand</strong><span>Brand Partner</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I bought the Glam Guide and it paid for itself on the first look. Clear, easy to follow, and real tips that actually work for everyday women."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#9B5FA5,#6B2F7A)">M</div>
+            <div><strong>Maria T.</strong><span>Guide Customer</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRESS / AS SEEN IN ===== -->
+  <section class="press-section" id="press">
+    <div class="container">
+      <p class="press-label">As Seen In &amp; Partnered With</p>
+      <div class="press-logos">
+        <div class="press-logo">Vogue</div>
+        <div class="press-logo">Allure</div>
+        <div class="press-logo">Byrdie</div>
+        <div class="press-logo">Refinery29</div>
+        <div class="press-logo">Glamour</div>
+        <div class="press-logo">Cosmopolitan</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUIZ ===== -->
+  <section class="quiz-section section" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Beauty Quiz</span>
+        <h2 class="section-title">What's your <em>Glam Style?</em></h2>
+        <p class="section-desc">Answer 3 quick questions and discover your signature beauty identity.</p>
+      </div>
+      <div class="quiz-wrap" id="quizWrap">
+        <!-- Step 1 -->
+        <div class="quiz-step active" data-step="1">
+          <p class="quiz-q">1 of 3 — What's your go-to occasion?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="natural">☀️ Casual daytime outings</button>
+            <button class="quiz-opt" data-val="bold">🎉 Nights out &amp; events</button>
+            <button class="quiz-opt" data-val="glam">✨ Special occasions &amp; galas</button>
+            <button class="quiz-opt" data-val="everyday">💼 Work &amp; everyday life</button>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="quiz-step" data-step="2">
+          <p class="quiz-q">2 of 3 — What do you love to highlight most?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="eyes">👁️ My eyes</button>
+            <button class="quiz-opt" data-val="lips">💋 My lips</button>
+            <button class="quiz-opt" data-val="skin">✨ My skin &amp; glow</button>
+            <button class="quiz-opt" data-val="all">💫 Everything — I go all out</button>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="quiz-step" data-step="3">
+          <p class="quiz-q">3 of 3 — Your beauty icon is closest to...</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="a">Selena Gomez — natural radiance</button>
+            <button class="quiz-opt" data-val="b">Rihanna — bold &amp; fearless</button>
+            <button class="quiz-opt" data-val="c">Kim K — full contour glam</button>
+            <button class="quiz-opt" data-val="d">Zendaya — editorial chic</button>
+          </div>
+        </div>
+        <!-- Result -->
+        <div class="quiz-result" id="quizResult">
+          <div class="result-icon">✦</div>
+          <h3 id="resultTitle">You're a Glam Queen!</h3>
+          <p id="resultDesc">Full glam is your love language. You're not afraid to go bold and dramatic — your makeup is an art form and every look turns heads.</p>
+          <div class="result-reco">
+            <p><strong>Margarita recommends for you:</strong></p>
+            <ul id="resultList"></ul>
+          </div>
+          <button class="btn btn-primary" id="retakeBtn">Retake Quiz</button>
+        </div>
+        <div class="quiz-progress">
+          <div class="quiz-bar" id="quizBar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SHOP ===== -->
+  <section class="shop-section section" id="shop">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Shop My Favorites</span>
+        <h2 class="section-title">Products I <em>actually love</em></h2>
+        <p class="section-desc">Handpicked products from my daily routine — all linked for you.</p>
+      </div>
+      <div class="shop-grid">
+        <div class="shop-card">
+          <div class="shop-icon" style="background:linear-gradient(135deg,#F7E7CE,#D4AF37)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="#8B2042"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <h3>Face &amp; Foundation</h3>
+          <p>My go-to bases, concealers, and setting products for flawless skin.</p>
+          <a href="#" class="shop-link">Shop Picks →</a>
+        </div>
+        <div class="shop-card">
+          <div class="shop-icon" style="background:linear-gradient(135deg,#F9D5E5,#C4526E)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="white"><path d="M12 2a5 5 0 100 10A5 5 0 0012 2zm0 12c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z"/></svg>
+          </div>
+          <h3>Lip Essentials</h3>
+          <p>Liners, lipsticks, glosses — from everyday nude to statement red.</p>
+          <a href="#" class="shop-link">Shop Picks →</a>
+        </div>
+        <div class="shop-card">
+          <div class="shop-icon" style="background:linear-gradient(135deg,#E8D5F5,#9B5FA5)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="white"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+          </div>
+          <h3>Eye &amp; Lash</h3>
+          <p>Palettes, liners, mascaras and lashes that make your eyes pop.</p>
+          <a href="#" class="shop-link">Shop Picks →</a>
+        </div>
+        <div class="shop-card">
+          <div class="shop-icon" style="background:linear-gradient(135deg,#FFFAF0,#D4AF37)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="#8B6914"><path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34a1 1 0 00-1.41 0L9 12.25 11.75 15l8.96-8.96a1 1 0 000-1.41z"/></svg>
+          </div>
+          <h3>Tools &amp; Brushes</h3>
+          <p>The brushes, sponges and tools worth every penny in your kit.</p>
+          <a href="#" class="shop-link">Shop Picks →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING ===== -->
+  <section class="booking-section section" id="booking">
+    <div class="container">
+      <div class="booking-inner">
+        <div class="booking-text">
+          <span class="section-label">Book a Session</span>
+          <h2 class="section-title">Ready to work <em>together?</em></h2>
+          <p>Whether it's a brand consultation, a 1-on-1 virtual makeup lesson, or a collab strategy call — let's get it on the calendar.</p>
+          <div class="booking-options">
+            <div class="booking-opt">
+              <div class="bopt-icon">💄</div>
+              <div><strong>Virtual Makeup Lesson</strong><span>60 min · Personalized to you</span></div>
+            </div>
+            <div class="booking-opt">
+              <div class="bopt-icon">🤝</div>
+              <div><strong>Brand Collab Call</strong><span>30 min · Strategy + rates</span></div>
+            </div>
+            <div class="booking-opt">
+              <div class="bopt-icon">✨</div>
+              <div><strong>Beauty Consultation</strong><span>45 min · Full routine review</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="booking-cal">
+          <div class="cal-placeholder">
+            <div class="cal-header">
+              <span>📅 Select a Date</span>
+            </div>
+            <div class="cal-grid" id="calGrid"></div>
+            <div class="cal-times">
+              <span class="cal-time active">10:00 AM</span>
+              <span class="cal-time">11:00 AM</span>
+              <span class="cal-time">1:00 PM</span>
+              <span class="cal-time">2:00 PM</span>
+              <span class="cal-time">4:00 PM</span>
+            </div>
+            <a href="#contact" class="btn btn-primary btn-full" style="margin-top:16px">Confirm Booking</a>
+            <p style="text-align:center;font-size:11px;color:#7A5566;margin-top:8px">Powered by Calendly (connect in settings)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COLLAB ===== -->
+  <section class="collab-section section" id="collab">
+    <div class="collab-bg"></div>
+    <div class="container">
+      <div class="collab-inner">
+        <div class="collab-text">
+          <span class="section-label light">Work With Me</span>
+          <h2 class="section-title light">Let's create something <em>beautiful</em> together</h2>
+          <p>I partner with beauty brands, skincare lines, and lifestyle companies that align with my values of <strong>authenticity, inclusivity, and quality.</strong></p>
+          <div class="collab-services">
+            <div class="service-tag">✦ Sponsored Tutorials</div>
+            <div class="service-tag">✦ Product Reviews</div>
+            <div class="service-tag">✦ Brand Ambassador</div>
+            <div class="service-tag">✦ Social Media Takeovers</div>
+            <div class="service-tag">✦ Event Coverage</div>
+            <div class="service-tag">✦ Affiliate Partnerships</div>
+          </div>
+          <a href="media-kit.html" class="btn btn-gold" target="_blank">View Media Kit ✦</a>
+        </div>
+        <div class="collab-stats-wrap">
+          <div class="collab-stat-card"><span class="cstat-num">10K+</span><span class="cstat-label">Engaged Followers</span></div>
+          <div class="collab-stat-card"><span class="cstat-num">85%</span><span class="cstat-label">Female Audience</span></div>
+          <div class="collab-stat-card"><span class="cstat-num">NYC</span><span class="cstat-label">Primary Market</span></div>
+          <div class="collab-stat-card"><span class="cstat-num">6%+</span><span class="cstat-label">Avg. Engagement</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Say <em>hello</em> ✦</h2>
+          <p>Whether you're a brand looking to collaborate, a viewer with a question, or just want to chat beauty — my inbox is always open.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#C4526E"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>hello@happyhourwithmargarita.com</span>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#C4526E"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>New York City, NY</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="csocial" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg></a>
+            <a href="#" class="csocial" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" class="csocial" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" placeholder="Jane" required/></div>
+              <div class="form-group"><label for="lname">Last Name</label><input type="text" id="lname" placeholder="Doe" required/></div>
+            </div>
+            <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="jane@example.com" required/></div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject">
+                <option value="">Select a topic...</option>
+                <option>Brand Collaboration</option>
+                <option>Media Kit Request</option>
+                <option>Virtual Lesson Booking</option>
+                <option>General Question</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Tell me what's on your mind..." required></textarea></div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message ✦</button>
+            <p class="form-note">I typically respond within 24–48 hours.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.svg" alt="Happy Hour with Margarita" height="70"/>
+          <p>Beauty is the occasion.<br/>Every hour is happy.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#products">Digital Products</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#collab">Work With Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Platforms</h4>
+          <ul>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Join the Club ✦</h4>
+          <p>Get beauty tips, exclusive deals, and new content delivered to your inbox.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="your@email.com" required/>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Happy Hour with Margarita · Margarita Marcano · All rights reserved.</p>
+        <p>Made with ✦ in NYC</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== EMAIL POPUP ===== -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-box">
+      <button class="popup-close" id="popupClose">✕</button>
+      <div class="popup-icon">✦</div>
+      <h3>Join the <em>Happy Hour Club</em></h3>
+      <p>Get exclusive tutorials, beauty tips, and first access to new products — straight to your inbox.</p>
+      <form class="popup-form" id="popupForm">
+        <input type="email" placeholder="your@email.com" required/>
+        <button type="submit" class="btn btn-primary btn-full">Yes, I'm In!</button>
+      </form>
+      <p class="popup-note">No spam. Unsubscribe anytime. ✦</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

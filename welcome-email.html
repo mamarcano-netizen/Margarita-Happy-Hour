@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>Welcome to the Happy Hour Club ✦</title>
+  <style>
+
+    /* ===== RESET ===== */
+    body, table, td, a { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+    table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse; }
+    img { border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; display:block; }
+    body { margin:0; padding:0; background:#1A0812; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+    /* ===== SPARKLE BURST ANIMATION ===== */
+    .sparkle-wrap {
+      position: relative;
+      background: linear-gradient(135deg, #1A0812 0%, #3D1A28 50%, #1A0812 100%);
+      padding: 52px 48px 36px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .spark-field {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+    }
+    .sp {
+      position: absolute;
+      font-size: 16px;
+      opacity: 0;
+      animation: sparkPop 2.4s ease-in-out infinite;
+    }
+    /* Each spark gets a unique position + delay */
+    .sp:nth-child(1)  { top:10%; left:10%; font-size:22px; color:#D4AF37; animation-delay:0.0s; }
+    .sp:nth-child(2)  { top:15%; left:30%; font-size:12px; color:#C4526E; animation-delay:0.3s; }
+    .sp:nth-child(3)  { top:8%;  left:55%; font-size:18px; color:#D4AF37; animation-delay:0.6s; }
+    .sp:nth-child(4)  { top:20%; left:75%; font-size:14px; color:#F9D5E5; animation-delay:0.9s; }
+    .sp:nth-child(5)  { top:12%; left:88%; font-size:20px; color:#D4AF37; animation-delay:1.2s; }
+    .sp:nth-child(6)  { top:55%; left:5%;  font-size:10px; color:#C4526E; animation-delay:0.4s; }
+    .sp:nth-child(7)  { top:70%; left:20%; font-size:16px; color:#D4AF37; animation-delay:0.8s; }
+    .sp:nth-child(8)  { top:65%; left:50%; font-size:12px; color:#F9D5E5; animation-delay:1.1s; }
+    .sp:nth-child(9)  { top:75%; left:72%; font-size:20px; color:#D4AF37; animation-delay:0.2s; }
+    .sp:nth-child(10) { top:60%; left:90%; font-size:14px; color:#C4526E; animation-delay:1.5s; }
+    .sp:nth-child(11) { top:40%; left:15%; font-size:18px; color:#D4AF37; animation-delay:0.7s; }
+    .sp:nth-child(12) { top:35%; left:82%; font-size:12px; color:#F9D5E5; animation-delay:1.8s; }
+    .sp:nth-child(13) { top:85%; left:40%; font-size:16px; color:#D4AF37; animation-delay:1.0s; }
+    .sp:nth-child(14) { top:30%; left:45%; font-size:10px; color:#C4526E; animation-delay:2.0s; }
+    .sp:nth-child(15) { top:80%; left:60%; font-size:22px; color:#D4AF37; animation-delay:0.5s; }
+
+    @keyframes sparkPop {
+      0%   { opacity:0; transform: scale(0) rotate(0deg); }
+      20%  { opacity:1; transform: scale(1.4) rotate(30deg); }
+      50%  { opacity:0.8; transform: scale(1) rotate(60deg); }
+      80%  { opacity:0.3; transform: scale(1.2) rotate(90deg); }
+      100% { opacity:0; transform: scale(0) rotate(120deg); }
+    }
+
+    /* ===== BURST RING around logo area ===== */
+    .burst-ring {
+      position: relative;
+      display: inline-block;
+      margin: 0 auto 20px;
+    }
+    .burst-ray {
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 3px;
+      border-radius: 4px;
+      transform-origin: 0 0;
+      opacity: 0;
+      animation: rayShoot 2s ease-out infinite;
+    }
+    .burst-ray:nth-child(1)  { height:28px; background:#D4AF37; transform:rotate(0deg)   translateY(-52px); animation-delay:0.0s; }
+    .burst-ray:nth-child(2)  { height:20px; background:#C4526E; transform:rotate(45deg)  translateY(-46px); animation-delay:0.15s;}
+    .burst-ray:nth-child(3)  { height:28px; background:#D4AF37; transform:rotate(90deg)  translateY(-52px); animation-delay:0.3s; }
+    .burst-ray:nth-child(4)  { height:20px; background:#F9D5E5; transform:rotate(135deg) translateY(-46px); animation-delay:0.45s;}
+    .burst-ray:nth-child(5)  { height:28px; background:#D4AF37; transform:rotate(180deg) translateY(-52px); animation-delay:0.6s; }
+    .burst-ray:nth-child(6)  { height:20px; background:#C4526E; transform:rotate(225deg) translateY(-46px); animation-delay:0.75s;}
+    .burst-ray:nth-child(7)  { height:28px; background:#D4AF37; transform:rotate(270deg) translateY(-52px); animation-delay:0.9s; }
+    .burst-ray:nth-child(8)  { height:20px; background:#F9D5E5; transform:rotate(315deg) translateY(-46px); animation-delay:1.05s;}
+
+    @keyframes rayShoot {
+      0%   { opacity:0; transform-origin:0 0; }
+      10%  { opacity:1; }
+      60%  { opacity:1; }
+      100% { opacity:0; }
+    }
+
+    /* ===== GLOWING PULSE on hero ===== */
+    @keyframes glowPulse {
+      0%,100% { text-shadow: 0 0 20px rgba(212,175,55,0.4); }
+      50%      { text-shadow: 0 0 40px rgba(212,175,55,0.9), 0 0 80px rgba(212,175,55,0.4); }
+    }
+    .glow-text {
+      animation: glowPulse 2.5s ease-in-out infinite;
+    }
+
+    /* ===== FLOAT ANIMATION on signature ===== */
+    @keyframes floatUp {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(-5px); }
+    }
+    .float-sig { animation: floatUp 3s ease-in-out infinite; display:inline-block; }
+
+    /* ===== SHIMMER on gold button ===== */
+    @keyframes shimmer {
+      0%   { background-position: -200% center; }
+      100% { background-position:  200% center; }
+    }
+    .shimmer-btn {
+      background: linear-gradient(90deg, #8B6914 0%, #D4AF37 40%, #F5E07A 50%, #D4AF37 60%, #8B6914 100%);
+      background-size: 200% auto;
+      animation: shimmer 2.5s linear infinite;
+      -webkit-background-clip: text;
+    }
+
+    /* ===== MOBILE RESPONSIVE ===== */
+    @media only screen and (max-width: 600px) {
+      .email-container { width: 100% !important; border-radius: 0 !important; }
+      .email-pad       { padding: 32px 20px !important; }
+      .email-pad-sm    { padding: 24px 20px !important; }
+      .hero-title      { font-size: 30px !important; line-height: 1.2 !important; }
+      .logo-title      { font-size: 28px !important; }
+      .logo-sub        { font-size: 13px !important; letter-spacing: 3px !important; }
+      .benefit-icon    { display: block !important; margin: 0 auto 12px !important; }
+      .benefit-text    { display: block !important; padding-left: 0 !important; text-align: center !important; }
+      .social-td       { display: block !important; padding: 6px 0 !important; }
+      .social-btn      { display: block !important; width: 100% !important; box-sizing: border-box !important; }
+      .cta-btn         { display: block !important; width: 100% !important; box-sizing: border-box !important; text-align: center !important; padding: 16px 20px !important; }
+      .hide-mobile     { display: none !important; }
+      .full-mobile     { width: 100% !important; }
+      .footer-text     { font-size: 11px !important; }
+      .gift-text       { font-size: 13px !important; }
+      .note-text       { font-size: 13px !important; }
+      .stat-text       { font-size: 22px !important; }
+      .sparkle-wrap    { padding: 40px 20px 28px !important; }
+    }
+
+    /* Gmail app dark mode fix */
+    @media (prefers-color-scheme: dark) {
+      .light-bg { background-color: #F5EEF0 !important; }
+    }
+
+  </style>
+</head>
+<body style="margin:0;padding:0;background-color:#1A0812;">
+
+  <!-- Preview text -->
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;color:#1A0812;line-height:1px;">
+    Your Happy Hour has officially started ✦ Welcome gorgeous — sparkles, glam tips & a FREE gift inside...✨💄
+  </div>
+
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#1A0812;">
+  <tr><td align="center" style="padding:32px 12px;">
+
+    <!-- CONTAINER -->
+    <table class="email-container" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0"
+           style="max-width:600px;width:100%;border-radius:24px;overflow:hidden;background:#1A0812;">
+
+
+      <!-- ===== SPARKLE BURST HEADER ===== -->
+      <tr>
+        <td class="sparkle-wrap" style="position:relative;background:linear-gradient(135deg,#1A0812 0%,#3D1A28 50%,#1A0812 100%);padding:52px 48px 36px;text-align:center;overflow:hidden;">
+
+          <!-- Background floating sparkles -->
+          <div class="spark-field" style="position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none;">
+            <span class="sp">✦</span><span class="sp">✦</span><span class="sp">✦</span>
+            <span class="sp">✦</span><span class="sp">✦</span><span class="sp">✦</span>
+            <span class="sp">✦</span><span class="sp">✦</span><span class="sp">✦</span>
+            <span class="sp">✦</span><span class="sp">✦</span><span class="sp">✦</span>
+            <span class="sp">✦</span><span class="sp">✦</span><span class="sp">✦</span>
+          </div>
+
+          <!-- Logo with burst rays -->
+          <div class="burst-ring" style="position:relative;display:inline-block;margin:0 auto 20px;">
+            <!-- Burst rays -->
+            <div class="burst-ray"></div><div class="burst-ray"></div>
+            <div class="burst-ray"></div><div class="burst-ray"></div>
+            <div class="burst-ray"></div><div class="burst-ray"></div>
+            <div class="burst-ray"></div><div class="burst-ray"></div>
+
+            <!-- Logo center -->
+            <div style="position:relative;z-index:2;background:linear-gradient(135deg,#3D1A28,#1A0812);border:2px solid rgba(212,175,55,0.3);border-radius:20px;padding:20px 32px;">
+              <p class="logo-title glow-text" style="font-family:Georgia,serif;font-size:34px;font-style:italic;font-weight:bold;color:#C4526E;margin:0;letter-spacing:1px;">Happy Hour</p>
+              <div style="height:1px;background:linear-gradient(90deg,transparent,#D4AF37,transparent);margin:8px 0;"></div>
+              <p class="logo-sub" style="font-family:Georgia,serif;font-size:14px;font-style:italic;color:#D4AF37;margin:0;letter-spacing:5px;">with Margarita</p>
+            </div>
+          </div>
+
+          <!-- Welcome tag -->
+          <div style="display:inline-block;background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.4);border-radius:50px;padding:8px 22px;margin-top:8px;">
+            <span style="font-size:12px;color:#D4AF37;letter-spacing:2px;text-transform:uppercase;font-weight:600;">✦ &nbsp; You're officially in &nbsp; ✦</span>
+          </div>
+
+        </td>
+      </tr>
+
+
+      <!-- ===== HERO ===== -->
+      <tr>
+        <td style="background:linear-gradient(135deg,#C4526E,#8B2042);padding:52px 48px;text-align:center;">
+          <p style="font-family:Georgia,serif;font-size:13px;font-style:italic;color:rgba(255,255,255,0.75);letter-spacing:3px;text-transform:uppercase;margin:0 0 18px;">Welcome gorgeous ✦</p>
+          <h1 class="hero-title" style="font-family:Georgia,serif;font-size:42px;font-weight:bold;color:#fff;margin:0 0 18px;line-height:1.18;">
+            Your Happy Hour<br/>has officially<br/><em class="glow-text" style="color:#D4AF37;">started!</em>
+          </h1>
+          <div style="width:60px;height:2px;background:rgba(255,255,255,0.3);margin:0 auto 20px;border-radius:2px;"></div>
+          <p class="note-text" style="font-size:16px;color:rgba(255,255,255,0.88);margin:0 auto;line-height:1.8;max-width:420px;">
+            I am SO excited you're here. You just joined the most glamorous, most supportive, most beauty-obsessed community on the internet — and it's about to be a <strong>whole vibe.</strong>
+          </p>
+        </td>
+      </tr>
+
+
+      <!-- ===== PERSONAL NOTE ===== -->
+      <tr>
+        <td class="email-pad light-bg" style="background:#FFFAF5;padding:48px;text-align:center;">
+          <div style="width:64px;height:64px;background:linear-gradient(135deg,#C4526E,#8B2042);border-radius:50%;margin:0 auto 22px;text-align:center;line-height:64px;font-size:28px;">💋</div>
+          <h2 style="font-family:Georgia,serif;font-size:24px;color:#1A0812;margin:0 0 18px;font-style:italic;">A note from Margarita</h2>
+          <p class="note-text" style="font-size:15px;color:#7A5566;line-height:1.85;margin:0 auto 16px;max-width:460px;">
+            Hey beautiful — I'm Margarita, your new beauty bestie right here in New York City. Every week I show up in your inbox with
+            <strong style="color:#C4526E;">step-by-step tutorials, brutally honest reviews, exclusive subscriber deals,</strong>
+            and all the glam inspo you need to feel like the most confident version of yourself.
+          </p>
+          <p class="note-text" style="font-size:15px;color:#7A5566;line-height:1.85;margin:0 auto;max-width:460px;">
+            No fluff. No boring content. Just real beauty tips from a real NYC girl who lives and breathes makeup.
+            <strong style="color:#C4526E;">This is your Happy Hour — and it's about to get so much glammier. 💄</strong>
+          </p>
+        </td>
+      </tr>
+
+
+      <!-- ===== DIVIDER ===== -->
+      <tr>
+        <td class="light-bg" style="background:#FFFAF5;padding:0 48px;">
+          <div style="height:1px;background:linear-gradient(90deg,transparent,#D4AF37,transparent);"></div>
+          <div style="text-align:center;margin-top:-12px;">
+            <span style="background:#FFFAF5;padding:0 14px;color:#D4AF37;font-size:20px;">✦</span>
+          </div>
+        </td>
+      </tr>
+
+
+      <!-- ===== WHAT YOU GET ===== -->
+      <tr>
+        <td class="email-pad light-bg" style="background:#FFFAF5;padding:36px 48px 48px;">
+          <h2 style="font-family:Georgia,serif;font-size:23px;color:#1A0812;text-align:center;margin:0 0 32px;font-style:italic;">
+            Here's what lands in your inbox <span style="color:#C4526E;">every week</span>
+          </h2>
+
+          <!-- Benefit 1 -->
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:22px;">
+            <tr>
+              <td class="benefit-icon" width="68" valign="top" style="padding-right:0;">
+                <div style="width:54px;height:54px;background:linear-gradient(135deg,#C4526E,#8B2042);border-radius:14px;text-align:center;line-height:54px;font-size:24px;">💄</div>
+              </td>
+              <td class="benefit-text" style="padding-left:16px;" valign="top">
+                <p style="font-family:Georgia,serif;font-size:16px;font-weight:bold;color:#1A0812;margin:0 0 4px;">Step-by-Step Tutorials</p>
+                <p style="font-size:14px;color:#7A5566;margin:0;line-height:1.65;">From 5-minute no-makeup looks to full red-carpet glam — broken down so anyone can nail it.</p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Benefit 2 -->
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:22px;">
+            <tr>
+              <td class="benefit-icon" width="68" valign="top">
+                <div style="width:54px;height:54px;background:linear-gradient(135deg,#D4AF37,#8B6914);border-radius:14px;text-align:center;line-height:54px;font-size:24px;">✨</div>
+              </td>
+              <td class="benefit-text" style="padding-left:16px;" valign="top">
+                <p style="font-family:Georgia,serif;font-size:16px;font-weight:bold;color:#1A0812;margin:0 0 4px;">Subscriber-Only Deals</p>
+                <p style="font-size:14px;color:#7A5566;margin:0;line-height:1.65;">Exclusive discount codes, early access to my digital guides, and deals you won't find anywhere else.</p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Benefit 3 -->
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:22px;">
+            <tr>
+              <td class="benefit-icon" width="68" valign="top">
+                <div style="width:54px;height:54px;background:linear-gradient(135deg,#9B5FA5,#6B2F7A);border-radius:14px;text-align:center;line-height:54px;font-size:24px;">🛍️</div>
+              </td>
+              <td class="benefit-text" style="padding-left:16px;" valign="top">
+                <p style="font-family:Georgia,serif;font-size:16px;font-weight:bold;color:#1A0812;margin:0 0 4px;">Honest Product Reviews</p>
+                <p style="font-size:14px;color:#7A5566;margin:0;line-height:1.65;">I test everything so you don't waste a single dollar. Real talk — no sponsorship bias, just the truth.</p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Benefit 4 -->
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td class="benefit-icon" width="68" valign="top">
+                <div style="width:54px;height:54px;background:linear-gradient(135deg,#E07090,#C4526E);border-radius:14px;text-align:center;line-height:54px;font-size:24px;">🗽</div>
+              </td>
+              <td class="benefit-text" style="padding-left:16px;" valign="top">
+                <p style="font-family:Georgia,serif;font-size:16px;font-weight:bold;color:#1A0812;margin:0 0 4px;">NYC Beauty Secrets</p>
+                <p style="font-size:14px;color:#7A5566;margin:0;line-height:1.65;">Hidden gem stores, backstage tricks, and insider info only a New York girl would know.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <!-- ===== FREE GIFT ===== -->
+      <tr>
+        <td class="email-pad" style="background:linear-gradient(135deg,#3D1A28,#1A0812);padding:52px 48px;text-align:center;">
+
+          <!-- Animated sparkle accent -->
+          <div style="font-size:28px;letter-spacing:12px;color:#D4AF37;margin-bottom:16px;animation:sparkPop 1.8s ease-in-out infinite;">✦ ✦ ✦</div>
+
+          <p style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#D4AF37;margin:0 0 12px;font-weight:600;">A little gift from me to you</p>
+          <h2 style="font-family:Georgia,serif;font-size:28px;color:#fff;margin:0 0 14px;line-height:1.25;">
+            Your FREE <span style="color:#D4AF37;" class="glow-text">Glow-Up Checklist</span>
+          </h2>
+          <p class="gift-text" style="font-size:15px;color:rgba(255,255,255,0.75);line-height:1.8;margin:0 auto 32px;max-width:400px;">
+            My personal <strong style="color:#D4AF37;">10-step checklist</strong> to prep your skin, set your face, and walk out the door looking like a million dollars — every single time. Yours free, forever.
+          </p>
+
+          <!-- Gold shimmer CTA button -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto;" class="full-mobile">
+            <tr>
+              <td style="border-radius:50px;background:linear-gradient(90deg,#8B6914,#D4AF37,#F5E07A,#D4AF37,#8B6914);background-size:200% auto;padding:2px;" class="full-mobile">
+                <a class="cta-btn" href="#"
+                   style="display:inline-block;padding:18px 44px;background:linear-gradient(90deg,#8B6914,#D4AF37,#F5E07A,#D4AF37,#8B6914);background-size:200% auto;border-radius:50px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;font-weight:bold;color:#1A0812;text-decoration:none;letter-spacing:0.5px;">
+                  ✦ &nbsp; Download My Free Checklist &nbsp; ✦
+                </a>
+              </td>
+            </tr>
+          </table>
+
+          <p style="font-size:12px;color:rgba(255,255,255,0.35);margin:18px 0 0;letter-spacing:0.5px;">No email required. No strings attached. Just glam. 💛</p>
+        </td>
+      </tr>
+
+
+      <!-- ===== VISIT WEBSITE ===== -->
+      <tr>
+        <td class="email-pad light-bg" style="background:#FFFAF5;padding:48px;text-align:center;">
+          <p style="font-family:Georgia,serif;font-size:22px;font-style:italic;color:#1A0812;margin:0 0 12px;">Ready to explore?</p>
+          <p style="font-size:15px;color:#7A5566;margin:0 auto 30px;line-height:1.7;max-width:400px;">
+            Tutorials, the interactive Glam Style Quiz, my full product picks, digital guides, booking — it's all waiting for you.
+          </p>
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto;" class="full-mobile">
+            <tr>
+              <td style="background:linear-gradient(135deg,#C4526E,#8B2042);border-radius:50px;" class="full-mobile">
+                <a class="cta-btn" href="#"
+                   style="display:inline-block;padding:17px 40px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;font-weight:bold;color:#fff;text-decoration:none;letter-spacing:0.5px;border-radius:50px;">
+                  Visit HappyHourWithMargarita.com →
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <!-- ===== SOCIAL LINKS ===== -->
+      <tr>
+        <td class="email-pad" style="background:linear-gradient(135deg,#1A0812,#3D1A28);padding:40px 48px;text-align:center;">
+          <p style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#D4AF37;margin:0 0 22px;font-weight:600;">Follow the glam journey ✦</p>
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 auto;">
+            <tr>
+              <td class="social-td" style="padding:0 6px;">
+                <a class="social-btn" href="#"
+                   style="display:inline-block;padding:12px 22px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);border-radius:50px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,0.85);text-decoration:none;">
+                  TikTok
+                </a>
+              </td>
+              <td class="social-td" style="padding:0 6px;">
+                <a class="social-btn" href="#"
+                   style="display:inline-block;padding:12px 22px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);border-radius:50px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,0.85);text-decoration:none;">
+                  Instagram
+                </a>
+              </td>
+              <td class="social-td" style="padding:0 6px;">
+                <a class="social-btn" href="#"
+                   style="display:inline-block;padding:12px 22px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);border-radius:50px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,0.85);text-decoration:none;">
+                  YouTube
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <!-- ===== SIGNATURE ===== -->
+      <tr>
+        <td class="email-pad light-bg" style="background:#FFFAF5;padding:44px 48px;text-align:center;border-top:3px solid #C4526E;">
+          <p style="font-size:15px;color:#7A5566;margin:0 0 10px;">With all the glam love in the world,</p>
+          <p class="float-sig" style="font-family:Georgia,serif;font-size:38px;font-style:italic;font-weight:bold;color:#C4526E;margin:0 0 6px;display:inline-block;">Margarita</p>
+          <p style="font-size:12px;color:#D4AF37;letter-spacing:3px;text-transform:uppercase;margin:0;">✦ &nbsp; Happy Hour with Margarita &nbsp; ✦</p>
+          <div style="margin-top:20px;font-size:22px;color:#C4526E;letter-spacing:6px;">💋 💄 ✦</div>
+        </td>
+      </tr>
+
+
+      <!-- ===== FOOTER ===== -->
+      <tr>
+        <td class="email-pad-sm" style="background:#1A0812;padding:28px 48px;text-align:center;">
+          <p class="footer-text" style="font-size:12px;color:rgba(255,255,255,0.3);margin:0 0 8px;line-height:1.7;">
+            You're receiving this because you joined the Happy Hour Club<br/>at HappyHourWithMargarita.com · New York City, NY
+          </p>
+          <p class="footer-text" style="font-size:12px;color:rgba(255,255,255,0.25);margin:0;">
+            <a href="#" style="color:rgba(255,255,255,0.4);text-decoration:underline;">Unsubscribe</a>
+            &nbsp;·&nbsp;
+            <a href="#" style="color:rgba(255,255,255,0.4);text-decoration:underline;">Privacy Policy</a>
+            &nbsp;·&nbsp;
+            <a href="#" style="color:rgba(255,255,255,0.4);text-decoration:underline;">View in Browser</a>
+          </p>
+        </td>
+      </tr>
+
+
+    </table>
+    <!-- END CONTAINER -->
+
+  </td></tr>
+  </table>
+
+</body>
+</html>

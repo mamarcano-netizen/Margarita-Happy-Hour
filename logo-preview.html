@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Hour with Margarita — Logo Preview</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 40px;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    h2 { font-family: Georgia, serif; color: #555; margin: 0; }
+
+    .preview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .label {
+      font-family: Georgia, serif;
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Light background */
+    .bg-light { background: #FFFAF5; border-radius: 16px; padding: 30px; }
+    /* Dark background */
+    .bg-dark  { background: #1A0A12; border-radius: 16px; padding: 30px; }
+    /* Transparent (checkerboard) */
+    .bg-check {
+      background-image: linear-gradient(45deg,#ddd 25%,transparent 25%),
+                        linear-gradient(-45deg,#ddd 25%,transparent 25%),
+                        linear-gradient(45deg,transparent 75%,#ddd 75%),
+                        linear-gradient(-45deg,transparent 75%,#ddd 75%);
+      background-size: 20px 20px;
+      background-position: 0 0,0 10px,10px -10px,-10px 0;
+      border-radius: 16px;
+      padding: 30px;
+    }
+
+    .row { display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; }
+  </style>
+</head>
+<body>
+  <h2>Logo Preview — Happy Hour with Margarita</h2>
+
+  <div class="row">
+    <div class="preview">
+      <div class="bg-light">
+        <img src="logo.svg" width="300"/>
+      </div>
+      <span class="label">Light Background</span>
+    </div>
+
+    <div class="preview">
+      <div class="bg-dark">
+        <img src="logo.svg" width="300"/>
+      </div>
+      <span class="label">Dark Background</span>
+    </div>
+
+    <div class="preview">
+      <div class="bg-check">
+        <img src="logo.svg" width="300"/>
+      </div>
+      <span class="label">Transparent</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="preview">
+      <div class="bg-light">
+        <img src="logo.svg" width="150"/>
+      </div>
+      <span class="label">Small (150px)</span>
+    </div>
+    <div class="preview">
+      <div class="bg-light">
+        <img src="logo.svg" width="80"/>
+      </div>
+      <span class="label">Icon Size (80px)</span>
+    </div>
+  </div>
+</body>
+</html>
