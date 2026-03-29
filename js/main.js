@@ -191,15 +191,27 @@ function showToast(msg) {
 }
 
 // ===== CONTACT FORM =====
-document.getElementById('contactForm')?.addEventListener('submit', e => {
+document.getElementById('contactForm')?.addEventListener('submit', async e => {
   e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
   btn.textContent = 'Sending...'; btn.disabled = true;
-  setTimeout(() => {
-    e.target.reset();
-    btn.textContent = 'Send Message ✦'; btn.disabled = false;
-    showToast("✦ Message sent! I'll get back to you soon.");
-  }, 1200);
+  try {
+    const res = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString(),
+    });
+    if (res.ok) {
+      form.reset();
+      showToast("✦ Message sent! Margarita will get back to you soon.");
+    } else {
+      showToast("Something went wrong — please email directly.");
+    }
+  } catch {
+    showToast("Something went wrong — please try again.");
+  }
+  btn.textContent = 'Send Message ✦'; btn.disabled = false;
 });
 
 // ===== NEWSLETTER =====
